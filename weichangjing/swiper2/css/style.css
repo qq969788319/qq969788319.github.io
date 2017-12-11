@@ -53,45 +53,9 @@ body {
     bottom: 5%;
     margin-left: -13.5px;
 }
-/*音乐按钮的样式*/
 
-#mp3Btn {
-    position: absolute;
-    right: 5%;
-    top: 5%;
-    z-index: 100;
-    width: 30px;
-    height: 31px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    border: 4px solid #292929;
-    text-align: center;
-    line-height: 28px;
-    cursor: pointer;
-    transform: rotateZ(0deg);
-    animation: mp3key 4s;
-    /*一直执行*/
-    animation-iteration-count: infinite;
-    /*匀速执行*/
-    animation-timing-function:linear;
-    /*默认运行动画*/
-    animation-play-state:running;
-}
-
-@keyframes mp3key {
-    from {
-        transform: rotateZ(0deg);
-    }
-    to {
-        transform: rotateZ(360deg);
-    }
-}
-
-#mp3Btn img {
-    width: 10px;
-}
 .s1,
-.s2 {
+.s2,.s3 {
     background: url(../img/bj.png);
     height: 100%;
     position: relative;
@@ -170,25 +134,26 @@ body {
 }
 
 .s1 .footer p:nth-of-type(2) {
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
 
 .s1 .footer p:nth-of-type(3) {
     height: 70px;
 }
 
-.s1 .footer img {
+.swiper-slide .hl img {
     left: 0;
     height: 70px;
     position: absolute;
+    bottom: 0;
 }
 
-.s1 .footer img:nth-of-type(1) {
+.swiper-slide .hl img:nth-of-type(1) {
     left: 0;
     animation:shake infinite;
 }
 
-.s1 .footer img:nth-of-type(2) {
+.swiper-slide .hl img:nth-of-type(2) {
     left: -60px;
     animation:shake infinite;
 }
@@ -287,4 +252,47 @@ body {
     bottom: -10px;
     left: 50%;
     margin-left: -60px;
+}
+
+/*第三屏*/
+
+.s3 {
+    color: #00f8ca;
+}
+
+.s3 h2 {
+    font-size: 26px;
+    position: relative;
+    top: 12%;
+}
+
+.s3 small {
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+
+.s3 h2::before,
+.s3 h2::after {
+    content: "";
+    width: 80px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+
+.s3 h2::before {
+    background: url(../img/14.png);
+    background-size: contain;
+    margin-left: -95px;
+    margin-top: 10px;
+}
+
+.s3 h2::after {
+    background: url(../img/13.png);
+    background-size: contain;
+    margin-left: 66px;
+    margin-top: 10px;
+    top: 0;
 }
