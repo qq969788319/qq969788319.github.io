@@ -52,6 +52,9 @@ body {
     top: auto;
     bottom: 5%;
     margin-left: -13.5px;
+    width: 13px;
+    height: 30px;
+    background-size: contain;
 }
 /*音乐按钮的样式*/
 
@@ -406,33 +409,38 @@ body {
     margin-top: 10px;
     top: 0;
 }
-.s4 .neir{
-     position: absolute;
+.s4 div {
+    position: absolute;
     top: 25%;
     width: 80%;
     height: 380px;
     left: 50%;
     margin-left: -40%;
 }
-.s4 .neir .bjj {
+
+.s4 div img {
     width: 100%;
     position: absolute;
     left: 0;
 }
-.s4 .an{
-    position: absolute;
-        right: 15%;
-    height: 30px;
+.s4 .main ul li{
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 35px;
 }
-.s4 .niu{
-    position: absolute;
-    left: 15%;
+.s4 .main ul li img{
+    width: 25px;
+    height: 25px;
 }
-.s4 .an a{
-color: aqua;
+.s4 .main ul li a{
     text-decoration: none;
+    color: #00f8ca;
+    margin-left: 40px;
 }
-.s4 .niu a{
-    color: aquamarine;
-    text-decoration: none;
+.s4 .main ul li:nth-of-type(1){
+    position: absolute;
+left: -5%;
+}.s4 .main ul li:nth-of-type(2){
+    position: absolute;
+left: 40%;
 }
