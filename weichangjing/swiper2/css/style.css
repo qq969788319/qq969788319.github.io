@@ -428,19 +428,207 @@ body {
     margin-top: 10px;
     margin-left: 35px;
 }
-.s4 .main ul li img{
+.s4 .main ul li .en{
     width: 25px;
     height: 25px;
+    position: relative;
+    top:5px;
+    left: -5px;
 }
 .s4 .main ul li a{
     text-decoration: none;
     color: #00f8ca;
-    margin-left: 40px;
+    margin-left: 15px;
+}
+.s4 h3{
+    font-size: 18px;
 }
 .s4 .main ul li:nth-of-type(1){
     position: absolute;
-left: -5%;
+    
 }.s4 .main ul li:nth-of-type(2){
     position: absolute;
-left: 40%;
+    left: 40%;
+}
+.s4 .main ul li:nth-of-type(3){
+    position: absolute;
+    top: 10%;
+}
+.s4 .main ul li:nth-of-type(4){
+    position: absolute;
+    top: 20%;
+}
+.s4 .main ul li:nth-of-type(5){
+    position: absolute;
+    top: 25%;
+}
+.s4 .main ul li:nth-of-type(6){
+    position: absolute;
+    top: 32%;
+}
+.s4 .main ul li:nth-of-type(7){
+    position: absolute;
+    top: 42%;
+}
+.s4 .main ul li:nth-of-type(8){
+    position: absolute;
+    top: 47%;
+}
+.s4 .main ul li:nth-of-type(9){
+    position: absolute;
+    top: 54%;
+}
+.s4 .main ul li:nth-of-type(10){
+    position: absolute;
+    top: 62%;
+}
+.s4 .main ul li:nth-of-type(11){
+    position: absolute;
+    top: 67%;
+}
+.s4 .main ul li:nth-of-type(12){
+    position: absolute;
+    top: 80%;
+    left: -43%;
+    font-size: 14px;
+    width: 90%;
+}
+.s4 .tu1{
+    width: 200px;
+    height: 14px;
+}
+.s4 .tu2{
+    width: 100px;
+    height: 14px;
+}
+.s4 .tu3{
+    width: 170px;
+    height: 14px;
+}
+.s4 .tu4{
+    width: 80px;
+    height: 14px;
+}
+.s4 .tu5{
+    width: 140px;
+    height: 14px;
+}
+.s4 .tu6{
+    width: 60px;
+    height: 14px;
+}
+.s4 span:nth-of-type(1){
+    position: relative;
+    left: 215px;
+    bottom: 5px;
+}
+.s4 span:nth-of-type(2){
+    position: relative;
+    left: 50px;
+    bottom: 5px;
+}
+.s4 p{
+    position: relative;
+    left: 110px;
+    bottom: 5px;
+}
+/*第五屏*/
+.s5 {
+    color: #00f8ca;
+}
+
+.s5 h2 {
+    font-size: 26px;
+    position: relative;
+    top: 12%;
+}
+
+.s5 small {
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+
+.s5 h2::before,
+.s5 h2::after {
+    content: "";
+    width: 80px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+
+.s5 h2::before {
+    background: url(../img/14.png);
+    background-size: contain;
+    margin-left: -95px;
+    margin-top: 10px;
+}
+.s5 h2::after {
+    background: url(../img/13.png);
+    background-size: contain;
+    margin-left: 66px;
+    margin-top: 10px;
+    top: 0;
+}
+.s5 div:nth-of-type(1){
+    position: absolute;
+    top: 25%;
+    width: 35%;
+    height: 180px;
+    left: 50%;
+    margin-left: -40%;
+}
+.s5 div:nth-of-type(2){
+    position: absolute;
+    top: 25%;
+    width: 35%;
+    height: 180px;
+    left: 95%;
+    margin-left: -40%;
+}
+.s5 div:nth-of-type(3){
+    position: absolute;
+    top: 55%;
+    width: 35%;
+    height: 180px;
+    left: 50%;
+    margin-left: -40%;
+}
+.s5 div:nth-of-type(4){
+    position: absolute;
+    top: 55%;
+    width: 35%;
+    height: 180px;
+    left: 95%;
+    margin-left: -40%;
+}
+.s5 div img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+.s5 div span {
+    /*渐变色*/
+    background: -moz-linear-gradient(left, #00ecfc, #00fd9d);
+    /*Mozilla*/
+    background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#00ecfc), to(#00fd9d));
+    /*Old gradient for webkit*/
+    background: -webkit-linear-gradient(left, #00ecfc, #00fd9d);
+    /*new gradient for Webkit*/
+    background: -o-linear-gradient(left, #00ecfc, #00fd9d);
+    /*Opera11*/
+    width: 110px;
+    height: 25px;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 25px;
+    display: inline-block;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -55px;
 }
