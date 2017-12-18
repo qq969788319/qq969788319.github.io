@@ -2,35 +2,52 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>sWiper</title>
+    <title>项目仓库</title>
+    <link rel="icon" href="img/picture.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <style>
         *{margin: 0;padding: 0;}
         body {
-            width: 100%;
-            background:black;
+            background:#213202;
         }
-        h1,h4{
-            color: aliceblue;
-            text-align: center;
-            padding: 20px;
+        h1{
+            margin-bottom: 50px;
+            color: aqua;
         }
-        a {
-            font-size: 22px;
-            color: antiquewhite;
-            padding: 20px;
-            border: 1px solid red;
+        p {
+            font-size: 18px;
         }
-        a:nth-of-type(2){
-            padding: 20px;
-            border: 1px solid blue;
+        .thumbnail img{
+            margin-bottom: 10px;
         }
     </style>
 </head>
 
 <body>
-    <h1 style="cursor:wait">盛邦升华在线预览</h1>
-    <h4 style="cursor:wait">上大学，不花钱，保就业，挣高薪.</h4> <a href="https://qq969788319.github.io/weichangjing/swiper2/index.html" target="_blank">微场景</a> 
-    <a href="https://qq969788319.github.io/shuangxuanhui/index.html" target="_blank">双选会邀请函</a>
+    <div class="container">                                                                                                                                                                            
+        <h1 class="col-md-center">盛邦升华在线预览</h1>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                   <img src="img/2.png" alt="">
+                   <p>微场景</p>
+                    <p><a href="https://qq969788319.github.io/weichangjing/swiper2/index.html" target="_blank" class="btn btn-primary" role="button" target="_blank">在线预览</a></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                   <img src="img/1.png" alt="">
+                   <p>邀请函</p>
+                    <p><a href="https://qq969788319.github.io/shuangxuanhui/index.html" target="_blank" class="btn btn-primary" role="button" target="_blank">在线预览</a></p>
+                </div>
+            </div>
+        </div> 
+
+
+    </div>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>
