@@ -1,53 +1,104 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>项目仓库</title>
-    <link rel="icon" href="img/picture.ico" type="image/x-icon"/>
+    <link rel="icon" href="img/picture.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        *{margin: 0;padding: 0;}
-        body {
-            background:#213202;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        h1{
+        
+        body {
+            background: #22313f;
+        }
+        
+        #starsBox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.75);
+            opacity: .5;
+        }
+        
+        #starsBox span {
+            display: inline-block;
+            width: auto;
+            position: absolute;
+            border-radius: 100%;
+            transition: 100s linear;
+        }
+        
+        h1 {
             margin-bottom: 50px;
             color: aqua;
         }
+        
         p {
             font-size: 18px;
         }
-        .thumbnail img{
+        
+        .thumbnail img {
             margin-bottom: 10px;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">                                                                                                                                                                            
-        <h1 class="col-md-center">盛邦升华在线预览</h1>
-        <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                   <img src="img/2.png" alt="">
-                   <p>微场景</p>
-                    <p><a href="https://qq969788319.github.io/weichangjing/swiper2/index.html" target="_blank" class="btn btn-primary" role="button" target="_blank">在线预览</a></p>
+   <div id="petalbox"></div>
+
+<script src="js/hb.js"></script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+</div>
+    <div id="starsBox">
+        <div class="container">
+            <h1 class="col-md-center">盛邦升华在线预览</h1>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail"> <img src="images/2.png" alt="">
+                        <p>微场景</p>
+                        <p><a href="https://qq969788319.github.io/weichangjing/swiper2/index.html" target="_blank" class="btn btn-primary" role="button" target="_blank">在线预览</a></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail"> <img src="images/1.png" alt="">
+                        <p>邀请函</p>
+                        <p><a href="https://qq969788319.github.io/shuangxuanhui/index.html" target="_blank" class="btn btn-primary" role="button" target="_blank">在线预览</a></p>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                   <img src="img/1.png" alt="">
-                   <p>邀请函</p>
-                    <p><a href="https://qq969788319.github.io/shuangxuanhui/index.html" target="_blank" class="btn btn-primary" role="button" target="_blank">在线预览</a></p>
-                </div>
-            </div>
-        </div> 
-
-
+        </div>
     </div>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var cols = ['#f5d76e', '#f7ca18', '#f4d03f', '#ececec', '#ecf0f1', '#a2ded0'];
+        var stars = 250;
+        for (var i = 0; i <= stars; i++) {
+            var size = Math.random() * 3;
+            var color = cols[parseInt(Math.random() * 4)];
+            $('#starsBox').prepend('<span style=" width: ' + size + 'px; height: ' + size + 'px; top: ' + Math.random() * 100 + '%; left: ' + Math.random() * 100 + '%; background: ' + color + '; box-shadow: 0 0 ' + Math.random() * 10 + 'px' + color + ';"></span>');
+        };
+        setTimeout(function () {
+            $('#starsBox span').each(function () {
+                $(this).css('top', Math.random() * 100 + '%').css('left', Math.random() * 100 + '%');
+            });
+        }, 1);
+        setInterval(function () {
+            $('#starsBox span').each(function () {
+                $(this).css('top', Math.random() * 100 + '%').css('left', Math.random() * 100 + '%');
+            });
+        }, 100000);
+    </script>
 </body>
 
 </html>
